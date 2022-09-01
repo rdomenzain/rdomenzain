@@ -3,3 +3,4 @@ mkdocs-material==8.4.2
 pymdown-extensions==9.5
 pygments==2.13.0
 mkdocs-glightbox==0.2.1
+mkdocs-material-relative-language-selector==1.1.4
