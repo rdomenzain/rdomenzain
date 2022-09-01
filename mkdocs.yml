@@ -7,14 +7,9 @@ copyright: Copyright &copy; R. Domenzain 2022
 repo_url: https://github.com/rdomenzain/rdomenzain
 repo_name: rdomenzain
 
-# nav:
-#  - Home: README.md
-
 plugins:
-    - search:
-        lang: en
+    - search
     - glightbox
-    - material-relative-language-selector
 theme:
     name: material
     language: en
