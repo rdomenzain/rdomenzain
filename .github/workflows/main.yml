@@ -12,4 +12,5 @@ jobs:
         with:
           python-version: 3.9
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force --clean --verbose
+      - run: mkdocs gh-deploy --config-file config/es/mkdocs.yml --force --clean --verbose
+      - run: mkdocs gh-deploy --config-file config/en/mkdocs.yml
