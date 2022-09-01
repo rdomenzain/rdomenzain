@@ -1,0 +1,97 @@
+site_name: Ricardo Domenzain
+site_description: Página Github de Ricardo Domenzain
+docs_dir: '../../docs/es'
+site_dir: '.'
+copyright: Copyright &copy; R. Domenzain 2022
+
+repo_url: https://github.com/rdomenzain/rdomenzain
+repo_name: rdomenzain
+
+# nav:
+#  - Home: README.md
+
+plugins:
+    - search:
+        lang: en
+    - glightbox
+theme:
+    name: material
+    language: es
+    icon:
+        logo: octicons/rocket-24
+        repo: fontawesome/brands/github
+    font:
+      text: Ubuntu
+      code: Source Code Pro
+    palette:
+      # Palette toggle for light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: teal
+        toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
+      # Palette toggle for dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: black
+        toggle:
+          icon: material/brightness-4
+          name: Switch to light mode
+    features:
+        - navigation.tabs
+        - instant
+
+extra:
+    manifest: "manifest.webmanifest"
+    generator: false
+    social:
+        - icon: material/home
+          link: https://rdomenzain.github.io/rdomenzain/
+        - icon: material/github
+          link: https://github.com/rdomenzain
+        - icon: material/linkedin
+          link: https://linkedin.com/in/rdomenzain
+    alternate:
+      - name: English
+        link: /en/
+        lang: en
+      - name: Spanish
+        link: /es/
+        lang: es
+    consent:
+      title: Consentimiento de cookies
+      description: >-
+        Utilizamos cookies para reconocer sus visitas repetidas y preferencias, así como
+        para medir la eficacia de nuestra documentación y si los usuarios
+        encontrar lo que están buscando. Con su consentimiento, nos está ayudando a
+        mejorar nuestra documentación.
+
+markdown_extensions:
+    - toc:
+          permalink: true
+    - admonition
+    - abbr
+    - attr_list
+    - codehilite
+    - def_list
+    - footnotes
+    - md_in_html
+    - meta
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.keys
+    - pymdownx.snippets
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.tabbed
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.tilde
