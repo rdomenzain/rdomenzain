@@ -1,6 +1,6 @@
 site_name: Ricardo Domenzain
 site_description: About this Github account of Ricardo Domenzain
-docs_dir: '../../docs/en'
+docs_dir: './docs/'
 site_dir: '.'
 copyright: Copyright &copy; R. Domenzain 2022
 
@@ -14,6 +14,7 @@ plugins:
     - search:
         lang: en
     - glightbox
+    - material-relative-language-selector
 theme:
     name: material
     language: en
@@ -52,13 +53,6 @@ extra:
           link: https://github.com/rdomenzain
         - icon: material/linkedin
           link: https://linkedin.com/in/rdomenzain
-    alternate:
-      - name: English
-        link: /en/
-        lang: en
-      - name: Spanish
-        link: /es/
-        lang: es
     consent:
       title: Cookie consent
       description: >- 
