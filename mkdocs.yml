@@ -1,7 +1,6 @@
 site_name: Ricardo Domenzain
 site_description: About this Github account of Ricardo Domenzain
 docs_dir: './docs/'
-site_dir: '.'
 copyright: Copyright &copy; R. Domenzain 2022
 
 repo_url: https://github.com/rdomenzain/rdomenzain
