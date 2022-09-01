@@ -1,0 +1,10 @@
+# Builds
+site
+public
+venv
+
+# Mac
+.DS_Store
+
+# IDEA/PHPStorm config dir
+.idea
