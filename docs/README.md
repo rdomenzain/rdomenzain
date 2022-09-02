@@ -12,18 +12,22 @@ I'm a software engineer, I love to learn new things, and I'm always trying to be
 
 I like to learn new things, I usually learn on my own.
 
-> :raised_hands_tone3: 
-> Sharing knowledge is part of my growth.
+!!! info "Attention"
+    Sharing knowledge is part of my growth. :raised_hands_tone3: 
 
 - :motorcycle: I love motorcycles
 - :airplane: I travel when work allows me
 - :clapper: Series and movies, my favorite hobby
-  > :dragon_face: I'm not questioning your honor, Lord Janos. I'm denying its existence.
-  >
-  > -- <cite>Tyrion Lannister - Game of Thrones</cite>
+
+!!! note "Reference"
+    :dragon_face: I'm not questioning your honor, Lord Janos. I'm denying its existence.
+
+    -- <cite>Tyrion Lannister - Game of Thrones</cite>
+
 - :musical_note: I usually listen to music and some podcasts
-  > :musical_score: Ticking away the moments that make up a dull day 
-  > Fritter and waste the hours in an offhand way...
-  > 
-  > -- <cite>Pink Floyd - Time</cite>
+
+!!! note "The Dark Side of the Moon"
+    :musical_score: Ticking away the moments that make up a dull day Fritter and waste the hours in an offhand way... 
+
+    -- <cite>Pink Floyd - Time</cite>
   
