@@ -16,8 +16,6 @@ My name is `Ricardo Domenzain` and I'm a software developer from Mexico. I'm pas
 
 ![Trophies](https://github-profile-trophy.vercel.app/?username=rdomenzain&theme=radical)
 
-
-
 ### Top Languages Used 📊
 
 ![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=rdomenzain&layout=compact&theme=radical)
@@ -25,12 +23,6 @@ My name is `Ricardo Domenzain` and I'm a software developer from Mexico. I'm pas
 ### My Projects :computer:
 
 ![**`helm-chart`**](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=rdomenzain&repo=helm-chart&show_owner=true)
-
-![**`cfdi33-utils`**](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=rdomenzain&repo=cfdi33-utils&show_owner=true)
-
-![**`cfdi33-timbrado`**](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=rdomenzain&repo=cfdi33-timbrado&show_owner=true)
-
-![**`cfdi2pdf`**](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=rdomenzain&repo=cfdi2pdf&show_owner=true)
 
 ### Support me :coffee:
 
