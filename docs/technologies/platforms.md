@@ -1,8 +1,28 @@
 # Platforms
 
-- `Apache Kafka:` A distributed messaging platform that enables real-time event processing and data streaming at scale. Kafka is known for its scalability, durability, and high-performance processing capabilities.
-  - `Kafka Connect:` A framework for connecting Kafka with external systems. Kafka Connect is used to import and export data from Kafka, as well as integrate Kafka with other technologies.
-  - `Schema Registry:` A service for managing schemas in Kafka. The Schema Registry is used to ensure data consistency and compatibility across different applications.
-  - `KSQL:` A streaming SQL engine for Kafka. KSQL is used to query and process data in real-time.
-  - `ACLs:` Access Control Lists (ACLs) are used to control access to Kafka topics. ACLs allow you to define which users or applications can read from or write to a topic.
-- `RabbitMQ:` An open-source messaging system that implements the Advanced Message Queuing Protocol (AMQP). RabbitMQ is used for building reliable and scalable messaging systems in distributed architectures.
+Messaging and streaming are where most of my architectural work happens.
+
+<div class="stack" markdown>
+
+-   :material-apache-kafka: **Apache Kafka**
+
+    A distributed messaging platform for real-time event processing and data
+    streaming at scale, known for its scalability, durability and
+    high-performance processing.
+
+    -   **Kafka Connect** — framework for importing and exporting data between
+        Kafka and external systems.
+    -   **Schema Registry** — schema management that keeps data consistent and
+        compatible across applications.
+    -   **KSQL** — streaming SQL engine for querying and processing data in
+        real time.
+    -   **ACLs** — access control lists that define which users or applications
+        can read from or write to a topic.
+
+-   :material-rabbit: **RabbitMQ**
+
+    An open-source messaging system implementing AMQP. Used for building
+    reliable, scalable queuing and event-driven systems in distributed
+    architectures.
+
+</div>

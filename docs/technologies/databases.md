@@ -1,14 +1,38 @@
 # Databases
 
+Relational when the data has shape, NoSQL when it doesn't — and Redis when it
+needs to be fast.
 
-- `MySQL:` An open-source relational database management system widely used for its performance, reliability, and ease of use.
+<div class="stack" markdown>
 
-- `PostgreSQL:` An open-source relational database management system known for its robustness, scalability, and support for advanced features.
+-   :simple-mysql: **MySQL**
 
-- `SQL Server:` A relational database management system developed by Microsoft. SQL Server is known for its high performance, scalability, and security.
+    An open-source relational database management system, widely used for its
+    performance, reliability and ease of use.
 
-- `MongoDB:` A document-oriented NoSQL database that provides flexibility and scalability. MongoDB is known for storing unstructured data and its focus on horizontal scalability.
+-   :simple-postgresql: **PostgreSQL**
 
-- `Redis:` An open-source in-memory database used for storing key-value data. Redis is known for its high speed, caching capability, and support for various data structures.
+    An open-source relational database known for robustness, scalability and
+    support for advanced features.
 
-- `DynamoDB:` A fully managed NoSQL database service offered by AWS. DynamoDB is known for its scalability, reliability, and low latency.
+-   :material-microsoft: **SQL Server**
+
+    Microsoft's relational database, known for high performance, scalability
+    and security.
+
+-   :simple-mongodb: **MongoDB**
+
+    A document-oriented NoSQL database built for flexibility and horizontal
+    scalability, well suited to unstructured data.
+
+-   :simple-redis: **Redis**
+
+    An open-source in-memory key-value store, known for its speed, caching
+    capabilities and support for a variety of data structures.
+
+-   :material-aws: **DynamoDB**
+
+    A fully managed NoSQL database service from AWS, known for its scalability,
+    reliability and low latency.
+
+</div>

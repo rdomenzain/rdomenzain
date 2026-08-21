@@ -1,13 +1,40 @@
 # DevOps
 
-- `Docker:` A container platform that enables packaging and distributing applications with their dependencies in lightweight and portable containers. Docker simplifies the deployment and management of applications in different environments.
+Containers, orchestration and the pipelines that get code from a commit to
+production without drama.
 
-- `Kubernetes:` A container orchestration platform that allows scalable and automated management of containerized applications. Kubernetes facilitates deployment, scalability, and monitoring of applications in production environments.
+<div class="stack" markdown>
 
-- `Jenkins:` A continuous integration and continuous delivery (CI/CD) tool that automates the process of building, testing, and deploying software. Jenkins is highly customizable and integrates with a wide range of tools and services.
+-   :material-docker: **Docker**
 
-- `Github Action:` A CI/CD tool that automates the process of building, testing, and deploying software. Github Action is highly customizable and integrates with a wide range of tools and services.
+    A container platform for packaging and distributing applications with their
+    dependencies in lightweight, portable containers — which makes deployment
+    behave the same across environments.
 
-- `Gitlab CI/CD:` A CI/CD tool that automates the process of building, testing, and deploying software. Gitlab CI/CD is highly customizable and integrates with a wide range of tools and services.
+-   :material-kubernetes: **Kubernetes**
 
-- `AWS (CodeBuild, CodePipeline):` A CI/CD tool that automates the process of building, testing, and deploying software. AWS (CodeBuild, CodePipeline) is highly customizable and integrates with a wide range of tools and services.
+    A container orchestration platform for scalable, automated management of
+    containerized applications: deployment, scaling and monitoring in
+    production.
+
+-   :simple-jenkins: **Jenkins**
+
+    A CI/CD tool that automates building, testing and deploying software.
+    Highly customizable and integrates with a wide range of tools and services.
+
+-   :material-github: **GitHub Actions**
+
+    CI/CD built into GitHub. Automates build, test and deploy — including the
+    pipeline that publishes this very site.
+
+-   :material-gitlab: **GitLab CI/CD**
+
+    GitLab's integrated CI/CD, automating the same build/test/deploy loop with
+    a strong configuration-as-code story.
+
+-   :material-aws: **AWS CodeBuild & CodePipeline**
+
+    Managed CI/CD on AWS, useful when the delivery pipeline should live next to
+    the infrastructure it deploys to.
+
+</div>

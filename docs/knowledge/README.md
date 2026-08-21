@@ -1,19 +1,66 @@
-# Training and knowledge
+# Experience
 
-I am a software engineer with a strong background in backend development and a diverse work experience. Throughout my career, I have had the opportunity to work in insurance and banking institutions, as well as with a German company specializing in intelligent transportation. These experiences have provided me with a deep understanding of the challenges and specific requirements across different sectors, enabling me to develop efficient and scalable solutions.
+I'm a software engineer with a strong backend background and a fairly varied
+work history. I've built systems for insurance and banking institutions, and
+for a German company specializing in intelligent transportation. Each of those
+sectors has its own definition of "this must not fail", and working across them
+taught me how to design solutions that are efficient and scalable without
+being fragile.
 
-During my time in the insurance and banking field, I made contributions to the development of critical and highly secure systems. My focus was on ensuring data integrity, scalability, and efficient transaction processing. Additionally, my experience in the intelligent transportation sector allowed me to work on innovative solutions that optimize logistics and enhance operational efficiency.
+## Where I've worked
 
-## Summary of Capabilities
+<div class="grid cards" markdown>
 
-- **Programming Languages**: I have experience in a wide range of programming languages, including Java, Python, PHP, Node.js, and .NET (C#). This versatility allows me to adapt to different technologies and select the most suitable one for each project.
+-   :material-bank-outline:{ .lg .middle } **Insurance & banking**
 
-- **Cloud Services**: I have worked with cloud platforms like AWS and Azure, leveraging their services to develop and deploy scalable and resilient applications. I am familiar with key cloud services and how to effectively utilize them in projects.
+    ---
 
-- **Kubernetes**: I have specialized in using Kubernetes as a container orchestration platform. I have experience in deploying and managing applications in Kubernetes clusters, as well as configuring services and handling scalability.
+    Contributed to critical, highly secure systems where data integrity,
+    scalability and efficient transaction processing were hard requirements
+    rather than nice-to-haves.
 
-- **Apache Kafka**: I have utilized Apache Kafka to implement distributed messaging and event processing systems. I am familiar with setting up and monitoring Kafka clusters, as well as integrating Kafka into microservices architectures.
+-   :material-truck-delivery-outline:{ .lg .middle } **Intelligent transportation**
 
-- **RabbitMQ**: I have worked with RabbitMQ to develop queuing and event-driven systems in distributed architectures. I have experience in configuring and managing queues, as well as integrating RabbitMQ with other technologies.
+    ---
 
-These are just a few of the capabilities I have developed throughout my career as a software engineer. If you would like more information or discuss specific projects, please feel free to contact me!
+    Worked on solutions that optimize logistics and improve operational
+    efficiency, with a German company focused on the sector.
+
+</div>
+
+## Summary of capabilities
+
+<div class="stack" markdown>
+
+-   :material-code-braces: **Programming languages**
+
+    Java, Python, PHP, Node.js and .NET (C#). That range means I can adapt to
+    the stack a project already has, and pick the right tool when the choice is
+    still open.
+
+-   :material-cloud-outline: **Cloud services**
+
+    AWS and Azure, using their managed services to build and deploy scalable,
+    resilient applications — and knowing which service is worth the lock-in.
+
+-   :material-kubernetes: **Kubernetes**
+
+    Deploying and managing applications in Kubernetes clusters: service
+    configuration, scaling and the operational side of running containers in
+    production.
+
+-   :material-apache-kafka: **Apache Kafka**
+
+    Distributed messaging and event processing: cluster setup and monitoring,
+    plus integrating Kafka into microservice architectures.
+
+-   :material-rabbit: **RabbitMQ**
+
+    Queuing and event-driven systems in distributed architectures — configuring
+    and managing queues, and integrating RabbitMQ with the rest of the stack.
+
+</div>
+
+!!! tip "Want the details?"
+    These are highlights, not the whole story. If you'd like to talk about a
+    specific project or technology, [reach out on LinkedIn](https://linkedin.com/in/rdomenzain).
