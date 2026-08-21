@@ -1,101 +1,141 @@
 site_name: Ricardo Domenzain
-site_description: About this Github account of Ricardo Domenzain
+site_description: Software engineer from Mexico — backend, cloud, event-driven systems and platform engineering.
+site_author: Ricardo Domenzain
+site_url: https://rdomenzain.github.io/rdomenzain/
 docs_dir: './docs/'
-copyright: Copyright &copy; R. Domenzain 2022
+copyright: Copyright &copy; R. Domenzain
 
 repo_url: https://github.com/rdomenzain/rdomenzain
-repo_name: rdomenzain
+repo_name: rdomenzain/rdomenzain
+edit_uri: edit/main/docs/
 
 plugins:
     - search
     - glightbox
+
 theme:
     name: material
     language: en
+    favicon: assets/images/favicon.svg
     icon:
         logo: octicons/rocket-24
         repo: fontawesome/brands/github
     font:
-      text: Ubuntu
-      code: Source Code Pro
+        text: Inter
+        code: JetBrains Mono
     palette:
-      # Palette toggle for light mode
-      - media: "(prefers-color-scheme: light)"
-        scheme: default
-        primary: teal
-        toggle:
-          icon: material/brightness-7
-          name: Switch to dark mode
-      # Palette toggle for dark mode
-      - media: "(prefers-color-scheme: dark)"
-        scheme: slate
-        primary: black
-        toggle:
-          icon: material/brightness-4
-          name: Switch to light mode
+        # Palette toggle for light mode
+        - media: '(prefers-color-scheme: light)'
+          scheme: default
+          primary: custom
+          accent: custom
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+        # Palette toggle for dark mode
+        - media: '(prefers-color-scheme: dark)'
+          scheme: slate
+          primary: custom
+          accent: custom
+          toggle:
+              icon: material/weather-night
+              name: Switch to light mode
     features:
+        - navigation.instant
+        - navigation.instant.progress
         - navigation.tabs
-        - instant
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.top
+        - navigation.footer
+        - search.suggest
+        - search.highlight
+        - search.share
+        - content.code.copy
+        - toc.follow
+
+extra_css:
+    - assets/stylesheets/extra.css
+
+nav:
+    - Home: README.md
+    - Experience: knowledge/README.md
+    - Tech stack:
+          - Overview: technologies/README.md
+          - Languages: technologies/languages.md
+          - Cloud: technologies/cloud.md
+          - Platforms: technologies/platforms.md
+          - Databases: technologies/databases.md
+          - DevOps: technologies/devops.md
+          - Tools: technologies/tools.md
 
 extra:
-    manifest: "manifest.webmanifest"
     generator: false
     social:
-        - icon: material/home
-          link: https://rdomenzain.github.io/rdomenzain/
-        - icon: material/github
+        - icon: fontawesome/brands/github
           link: https://github.com/rdomenzain
-        - icon: material/linkedin
+          name: GitHub
+        - icon: fontawesome/brands/linkedin
           link: https://linkedin.com/in/rdomenzain
+          name: LinkedIn
+        - icon: fontawesome/brands/x-twitter
+          link: https://twitter.com/rdomenzainm
+          name: X / Twitter
+        - icon: material/coffee
+          link: https://www.buymeacoffee.com/rdomenzain
+          name: Buy me a coffee
     consent:
-      title: Cookie consent
-      description: >- 
-        We use cookies to recognize your repeated visits and preferences, as well
-        as to measure the effectiveness of our documentation and whether users
-        find what they're searching for. With your consent, you're helping us to
-        make our documentation better.
+        title: Cookie consent
+        description: >-
+            I use cookies to recognize repeated visits and preferences, and to
+            measure whether this site is actually useful. With your consent,
+            you're helping me make it better.
     analytics:
-      provider: google
-      property: G-STXJX0Q9FH
-      feedback:
-        title: Was this page helpful?
-        ratings:
-          - icon: material/emoticon-happy-outline
-            name: This page was helpful
-            data: 1
-            note: >-
-              Thanks for your feedback!
-          - icon: material/emoticon-sad-outline
-            name: This page could be improved
-            data: 0
-            note: >- 
-              Thanks for your feedback! Help us improve this page.
+        provider: google
+        property: G-STXJX0Q9FH
+        feedback:
+            title: Was this page helpful?
+            ratings:
+                - icon: material/emoticon-happy-outline
+                  name: This page was helpful
+                  data: 1
+                  note: >-
+                      Thanks for your feedback!
+                - icon: material/emoticon-sad-outline
+                  name: This page could be improved
+                  data: 0
+                  note: >-
+                      Thanks for your feedback! Help me improve this page.
 
 markdown_extensions:
-    - toc:
-          permalink: true
-    - admonition
     - abbr
+    - admonition
     - attr_list
-    - codehilite
     - def_list
     - footnotes
     - md_in_html
-    - meta
+    - tables
+    - toc:
+          permalink: true
+          permalink_title: Anchor link to this section
+          toc_depth: 3
     - pymdownx.caret
-    - pymdownx.critic
     - pymdownx.details
     - pymdownx.emoji:
-          emoji_index: !!python/name:materialx.emoji.twemoji
-          emoji_generator: !!python/name:materialx.emoji.to_svg
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - pymdownx.inlinehilite
     - pymdownx.keys
-    - pymdownx.snippets
     - pymdownx.superfences:
           custom_fences:
               - name: mermaid
                 class: mermaid
                 format: !!python/name:pymdownx.superfences.fence_code_format
-    - pymdownx.tabbed
+    - pymdownx.tabbed:
+          alternate_style: true
     - pymdownx.tasklist:
           custom_checkbox: true
-    - pymdownx.tilde

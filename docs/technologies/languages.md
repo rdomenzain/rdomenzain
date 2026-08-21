@@ -1,11 +1,35 @@
 # Languages
 
-- `Java:` A general-purpose, object-oriented programming language widely used for its portability, performance, and extensive libraries and frameworks.
+Five languages I've shipped production code in. Which one I reach for depends
+on the team, the ecosystem and the runtime constraints.
 
-- `Python:` An interpreted, high-level programming language known for its readability and ease of use. Python has a large developer community and is used in various applications, from scripting to web and scientific development.
+<div class="stack" markdown>
 
-- `PHP:` A programming language specifically designed for web development. PHP is easy to learn and offers a wide range of frameworks and libraries for building dynamic web applications.
+-   :material-language-java: **Java**
 
-- `Node:` A JavaScript runtime environment that allows developers to run JavaScript code outside of a browser. Node is used for building scalable and high-performance applications.
+    A general-purpose, object-oriented language widely used for its
+    portability, performance, and extensive libraries and frameworks. My
+    default for long-lived, high-throughput backend services.
 
-- `.NET (C#):` A software development framework created by Microsoft for building scalable and secure applications. .NET offers a wide range of libraries and tools for enterprise application development.
+-   :material-language-python: **Python**
+
+    An interpreted, high-level language known for readability and ease of use.
+    Huge community, and it stretches from quick scripting to web and scientific
+    workloads.
+
+-   :material-language-php: **PHP**
+
+    Purpose-built for web development. Easy to pick up, with a wide range of
+    frameworks and libraries for building dynamic web applications.
+
+-   :material-nodejs: **Node.js**
+
+    A JavaScript runtime that runs outside the browser. My go-to for scalable,
+    I/O-heavy services and high-performance APIs.
+
+-   :material-language-csharp: **.NET (C#)**
+
+    Microsoft's framework for building scalable and secure applications, with a
+    deep library and tooling story for enterprise development.
+
+</div>

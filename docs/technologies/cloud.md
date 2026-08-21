@@ -1,5 +1,19 @@
 # Cloud
 
-- `AWS (Amazon Web Services):` A leading cloud services platform that offers a wide range of services and tools for storage, computing, networking, and more. It is highly scalable, reliable, and provides flexibility for deploying cloud solutions.
+The two clouds I have deployed and operated production workloads on.
 
-- `Azure:` Microsoft's cloud platform that provides infrastructure, storage, database, and more. Azure is known for its integration with Microsoft development tools and its focus on hybrid cloud solutions.
+<div class="stack" markdown>
+
+-   :material-aws: **AWS (Amazon Web Services)**
+
+    A leading cloud platform offering a wide range of services for storage,
+    compute, networking and more. Highly scalable, reliable, and flexible
+    enough to deploy almost any architecture.
+
+-   :material-microsoft-azure: **Azure**
+
+    Microsoft's cloud platform providing infrastructure, storage, databases and
+    more. Known for its integration with Microsoft development tools and its
+    focus on hybrid cloud solutions.
+
+</div>
