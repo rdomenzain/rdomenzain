@@ -1,21 +1,21 @@
 # Languages
 
-Five languages I've shipped production code in. Which one I reach for depends
-on the team, the ecosystem and the runtime constraints.
+Languages used to deliver production code. Selection depends on the existing
+ecosystem, the team, and the runtime constraints of the system in question.
 
 <div class="stack" markdown>
 
 -   :material-language-java: **Java**
 
     A general-purpose, object-oriented language widely used for its
-    portability, performance, and extensive libraries and frameworks. My
-    default for long-lived, high-throughput backend services.
+    portability, performance, and extensive libraries and frameworks. Applied
+    to long-lived, high-throughput backend services.
 
 -   :material-language-python: **Python**
 
     An interpreted, high-level language known for readability and ease of use.
-    Huge community, and it stretches from quick scripting to web and scientific
-    workloads.
+    Backed by a large ecosystem covering automation, web services and data
+    processing workloads.
 
 -   :material-language-php: **PHP**
 
@@ -24,8 +24,8 @@ on the team, the ecosystem and the runtime constraints.
 
 -   :material-nodejs: **Node.js**
 
-    A JavaScript runtime that runs outside the browser. My go-to for scalable,
-    I/O-heavy services and high-performance APIs.
+    A JavaScript runtime outside the browser, applied to scalable, I/O-bound
+    services and high-throughput APIs.
 
 -   :material-language-csharp: **.NET (C#)**
 

@@ -1,15 +1,15 @@
 # DevOps
 
-Containers, orchestration and the pipelines that get code from a commit to
-production without drama.
+Containerization, orchestration and the delivery pipelines that move code from
+commit to production.
 
 <div class="stack" markdown>
 
 -   :material-docker: **Docker**
 
     A container platform for packaging and distributing applications with their
-    dependencies in lightweight, portable containers — which makes deployment
-    behave the same across environments.
+    dependencies in lightweight, portable containers, giving consistent
+    behaviour across environments.
 
 -   :material-kubernetes: **Kubernetes**
 
@@ -24,17 +24,17 @@ production without drama.
 
 -   :material-github: **GitHub Actions**
 
-    CI/CD built into GitHub. Automates build, test and deploy — including the
-    pipeline that publishes this very site.
+    CI/CD integrated into GitHub, automating build, test and deployment,
+    including the pipeline that publishes this site.
 
 -   :material-gitlab: **GitLab CI/CD**
 
-    GitLab's integrated CI/CD, automating the same build/test/deploy loop with
-    a strong configuration-as-code story.
+    GitLab's integrated CI/CD, automating the build, test and deployment cycle
+    with a configuration-as-code approach.
 
 -   :material-aws: **AWS CodeBuild & CodePipeline**
 
-    Managed CI/CD on AWS, useful when the delivery pipeline should live next to
-    the infrastructure it deploys to.
+    Managed CI/CD on AWS, applied when the delivery pipeline is best colocated
+    with the infrastructure it targets.
 
 </div>

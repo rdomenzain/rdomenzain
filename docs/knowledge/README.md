@@ -1,66 +1,63 @@
 # Experience
 
-I'm a software engineer with a strong backend background and a fairly varied
-work history. I've built systems for insurance and banking institutions, and
-for a German company specializing in intelligent transportation. Each of those
-sectors has its own definition of "this must not fail", and working across them
-taught me how to design solutions that are efficient and scalable without
-being fragile.
+Software engineer with a backend specialization and professional experience
+across insurance, banking and intelligent transportation. Each of those
+sectors defines availability and correctness differently, and working across
+them shaped an approach to system design that prioritizes efficiency and
+scalability without introducing fragility.
 
-## Where I've worked
+## Sectors
 
 <div class="grid cards" markdown>
 
--   :material-bank-outline:{ .lg .middle } **Insurance & banking**
+-   :material-bank-outline:{ .lg .middle } **Insurance and banking**
 
     ---
 
-    Contributed to critical, highly secure systems where data integrity,
-    scalability and efficient transaction processing were hard requirements
-    rather than nice-to-haves.
+    Critical, high-security systems in which data integrity, scalability and
+    efficient transaction processing were hard requirements rather than
+    optional targets.
 
 -   :material-truck-delivery-outline:{ .lg .middle } **Intelligent transportation**
 
     ---
 
-    Worked on solutions that optimize logistics and improve operational
-    efficiency, with a German company focused on the sector.
+    Solutions aimed at optimizing logistics operations and improving
+    operational efficiency.
 
 </div>
 
-## Summary of capabilities
+## Core capabilities
 
 <div class="stack" markdown>
 
 -   :material-code-braces: **Programming languages**
 
-    Java, Python, PHP, Node.js and .NET (C#). That range means I can adapt to
-    the stack a project already has, and pick the right tool when the choice is
+    Java, Python, PHP, Node.js and .NET (C#). This range supports adapting to
+    an existing stack and selecting an appropriate runtime when the decision is
     still open.
 
 -   :material-cloud-outline: **Cloud services**
 
-    AWS and Azure, using their managed services to build and deploy scalable,
-    resilient applications — and knowing which service is worth the lock-in.
+    AWS and Azure, using managed services to build and deploy scalable,
+    resilient applications while assessing the operational trade-offs each
+    service introduces.
 
 -   :material-kubernetes: **Kubernetes**
 
-    Deploying and managing applications in Kubernetes clusters: service
-    configuration, scaling and the operational side of running containers in
-    production.
+    Deployment and management of applications in Kubernetes clusters: service
+    configuration, scaling, rollout strategy and the operational aspects of
+    running containers in production.
 
 -   :material-apache-kafka: **Apache Kafka**
 
-    Distributed messaging and event processing: cluster setup and monitoring,
-    plus integrating Kafka into microservice architectures.
+    Distributed messaging and event processing, including cluster setup and
+    monitoring and the integration of Kafka into microservice architectures.
 
 -   :material-rabbit: **RabbitMQ**
 
-    Queuing and event-driven systems in distributed architectures — configuring
-    and managing queues, and integrating RabbitMQ with the rest of the stack.
+    Queuing and event-driven systems in distributed architectures: queue
+    configuration and management, and integration with the surrounding
+    services.
 
 </div>
-
-!!! tip "Want the details?"
-    These are highlights, not the whole story. If you'd like to talk about a
-    specific project or technology, [reach out on LinkedIn](https://linkedin.com/in/rdomenzain).

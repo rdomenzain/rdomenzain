@@ -1,5 +1,5 @@
 site_name: Ricardo Domenzain
-site_description: Software engineer from Mexico — backend, cloud, event-driven systems and platform engineering.
+site_description: Ricardo Domenzain — Software Engineer, Mexico. Backend, cloud, event-driven systems and platform engineering.
 site_author: Ricardo Domenzain
 site_url: https://rdomenzain.github.io/rdomenzain/
 docs_dir: './docs/'
@@ -11,7 +11,6 @@ edit_uri: edit/main/docs/
 
 plugins:
     - search
-    - glightbox
 
 theme:
     name: material
@@ -78,18 +77,11 @@ extra:
         - icon: fontawesome/brands/linkedin
           link: https://linkedin.com/in/rdomenzain
           name: LinkedIn
-        - icon: fontawesome/brands/x-twitter
-          link: https://twitter.com/rdomenzainm
-          name: X / Twitter
-        - icon: material/coffee
-          link: https://www.buymeacoffee.com/rdomenzain
-          name: Buy me a coffee
     consent:
         title: Cookie consent
         description: >-
-            I use cookies to recognize repeated visits and preferences, and to
-            measure whether this site is actually useful. With your consent,
-            you're helping me make it better.
+            This site uses cookies to recognize repeated visits and remember
+            preferences, and to measure how its content is used.
     analytics:
         provider: google
         property: G-STXJX0Q9FH
@@ -100,12 +92,12 @@ extra:
                   name: This page was helpful
                   data: 1
                   note: >-
-                      Thanks for your feedback!
+                      Thanks for your feedback.
                 - icon: material/emoticon-sad-outline
                   name: This page could be improved
                   data: 0
                   note: >-
-                      Thanks for your feedback! Help me improve this page.
+                      Thanks for your feedback.
 
 markdown_extensions:
     - abbr

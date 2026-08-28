@@ -1,6 +1,6 @@
 # Platforms
 
-Messaging and streaming are where most of my architectural work happens.
+Messaging and streaming platforms used to build event-driven systems.
 
 <div class="stack" markdown>
 

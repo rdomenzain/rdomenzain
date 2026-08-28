@@ -1,8 +1,11 @@
+---
+title: Tech stack
+---
+
 # Overview
 
-Throughout my professional life I've specialized in a handful of technologies
-and tools. These are the ones I reach for most often, and the ones I'd feel
-comfortable being asked hard questions about.
+The technologies and tools listed below are the ones applied most consistently
+in production work.
 
 <div class="grid cards" markdown>
 
@@ -10,8 +13,8 @@ comfortable being asked hard questions about.
 
     ---
 
-    Java, Python, PHP, Node.js and .NET (C#) — picked per problem, not per
-    habit.
+    Java, Python, PHP, Node.js and .NET (C#), selected according to the
+    ecosystem and runtime constraints of each project.
 
     [:octicons-arrow-right-24: Languages](languages.md)
 
@@ -55,7 +58,8 @@ comfortable being asked hard questions about.
 
     ---
 
-    Grafana, Prometheus & Thanos, Metabase, Backstage and the IDEs I live in.
+    Grafana, Prometheus and Thanos, Metabase, Backstage and development
+    environments.
 
     [:octicons-arrow-right-24: Tools](tools.md)
 

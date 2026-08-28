@@ -1,7 +1,7 @@
 # Databases
 
-Relational when the data has shape, NoSQL when it doesn't — and Redis when it
-needs to be fast.
+Relational and NoSQL engines used in production, selected according to the
+consistency, access-pattern and latency requirements of each system.
 
 <div class="stack" markdown>
 

@@ -1,8 +1,13 @@
-<h1 align="center">Hey there, I'm Ricardo 👋</h1>
+<h1 align="center">Ricardo Domenzain</h1>
 
 <p align="center">
-  <b>Software engineer from Mexico</b> · backend, cloud &amp; event-driven systems<br/>
-  I build services that stay up — and I like sharing what I learn along the way.
+  <b>Software Engineer</b> &middot; Mexico
+</p>
+
+<p align="center">
+  Backend and platform engineering: distributed services, event-driven
+  architecture, and the cloud infrastructure and delivery pipelines that
+  support them.
 </p>
 
 <p align="center">
@@ -12,26 +17,22 @@
   <a href="https://www.linkedin.com/in/rdomenzain/">
     <img src="https://img.shields.io/badge/LinkedIn-0a66c2?style=for-the-badge" alt="LinkedIn" />
   </a>
-  <a href="https://twitter.com/rdomenzainm">
-    <img src="https://img.shields.io/badge/X-0f172a?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter" />
-  </a>
-  <a href="https://www.buymeacoffee.com/rdomenzain">
-    <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-06b6d4?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="Buy me a coffee" />
-  </a>
 </p>
 
 ---
 
-## 🧭 About me
+## Profile
 
-- 🏗️ Backend engineer — critical systems for **insurance**, **banking** and **intelligent transportation**
-- 🔀 Event-driven architecture with **Apache Kafka** and **RabbitMQ**
-- ☁️ Cloud on **AWS** and **Azure**, orchestrated with **Kubernetes**
-- 📚 Mostly self-taught, and always trying to be better than yesterday
-- 🏍️ Motorcycles · ✈️ travel · 🎬 series & movies · 🎵 music and podcasts
-- 👀 More about me → **[rdomenzain.github.io/rdomenzain](https://rdomenzain.github.io/rdomenzain/)**
+Software engineer specialized in backend development, with professional
+experience across the insurance, banking and intelligent transportation
+sectors. Focused on distributed systems that must remain correct and available
+under sustained load, on event-driven architecture with Apache Kafka and
+RabbitMQ, and on cloud workloads running on AWS and Azure orchestrated with
+Kubernetes.
 
-## 🛠️ Tech stack
+Full profile: **[rdomenzain.github.io/rdomenzain](https://rdomenzain.github.io/rdomenzain/)**
+
+## Tech stack
 
 **Languages**
 
@@ -67,33 +68,10 @@
 ![Metabase](https://img.shields.io/badge/Metabase-509EE3?style=flat-square&logo=metabase&logoColor=white)
 ![Backstage](https://img.shields.io/badge/Backstage-9BF0E1?style=flat-square&logo=backstage&logoColor=black)
 
-## 📊 GitHub
+## Open source
 
-<p align="center">
-  <a href="https://github.com/rdomenzain">
-    <img src="https://img.shields.io/github/followers/rdomenzain?style=for-the-badge&logo=github&label=Followers&labelColor=0f172a&color=4f46e5" alt="GitHub followers" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=rdomenzain&hide_border=true&background=00000000&ring=4f46e5&fire=0891b2&currStreakLabel=4f46e5&currStreakNum=4f46e5&sideLabels=6e7781&sideNums=6e7781&dates=6e7781&stroke=6e7781&excludeDaysLabel=6e7781" alt="GitHub streak" />
-</p>
-
-## 📌 Projects
-
-**[helm-chart](https://github.com/rdomenzain/helm-chart)**
+**[helm-chart](https://github.com/rdomenzain/helm-chart)** — Helm charts for
+deploying applications to Kubernetes.
 
 [![Stars](https://img.shields.io/github/stars/rdomenzain/helm-chart?style=flat-square&labelColor=0f172a&color=4f46e5)](https://github.com/rdomenzain/helm-chart/stargazers)
 [![Last commit](https://img.shields.io/github/last-commit/rdomenzain/helm-chart?style=flat-square&labelColor=0f172a&color=0891b2)](https://github.com/rdomenzain/helm-chart/commits)
-
-## ☕ Support
-
-> All my projects are free and open source. If you find them useful, you can support me by buying me a coffee.
->
-> Everything collected goes to institutions that help children with cancer in Mexico ❤️
-
-<p align="center">
-  <a href="https://www.buymeacoffee.com/rdomenzain">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="Buy me a coffee" />
-  </a>
-</p>

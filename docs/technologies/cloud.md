@@ -1,6 +1,6 @@
 # Cloud
 
-The two clouds I have deployed and operated production workloads on.
+Cloud platforms used to deploy and operate production workloads.
 
 <div class="stack" markdown>
 
