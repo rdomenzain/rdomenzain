@@ -1,0 +1,443 @@
+:root {
+    --rd-indigo: #4f46e5;
+    --rd-indigo-light: #818cf8;
+    --rd-cyan: #06b6d4;
+    --rd-cyan-light: #22d3ee;
+
+    --rd-gradient: linear-gradient(135deg, var(--rd-indigo) 0%, var(--rd-cyan) 100%);
+    /* Darker ramp for surfaces that carry white text (AA at 14px/600). */
+    --rd-gradient-cta: linear-gradient(135deg, #4338ca 0%, #0e7490 100%);
+    --rd-radius: 16px;
+    --rd-ring: 0 0 0 1px rgba(99, 102, 241, 0.18);
+
+    --rd-surface: #ffffff;
+    --rd-surface-alt: #f6f7fb;
+    --rd-border: rgba(15, 23, 42, 0.09);
+    --rd-muted: rgba(15, 23, 42, 0.62);
+    --rd-hero-ground: linear-gradient(160deg, #1e1b4b 0%, #312e81 45%, #0f766e 100%);
+}
+
+/* Material declares its own values inside [data-md-color-scheme=...], which is
+   on <body> and therefore shadows anything set on :root. Override per scheme. */
+:root,
+[data-md-color-scheme='default'] {
+    --md-primary-fg-color: #312e81;
+    --md-primary-fg-color--light: var(--rd-indigo);
+    --md-primary-fg-color--dark: #1e1b4b;
+    --md-primary-bg-color: #ffffff;
+    --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+    --md-accent-fg-color: var(--rd-indigo);
+    --md-accent-fg-color--transparent: rgba(79, 70, 229, 0.1);
+
+    /* --md-footer-fg-color is shared by the prev/next bar and the meta bar, so
+       brand the backgrounds and leave Material's white foreground alone. */
+    --md-footer-bg-color: #1e1b4b;
+    --md-footer-bg-color--dark: #171340;
+}
+
+[data-md-color-scheme='slate'] {
+    --md-hue: 232;
+
+    --md-primary-fg-color: #0b1020;
+    --md-primary-fg-color--light: var(--rd-indigo-light);
+    --md-primary-fg-color--dark: #060913;
+    --md-primary-bg-color: #e8eaf6;
+    --md-accent-fg-color: var(--rd-cyan-light);
+    --md-accent-fg-color--transparent: rgba(34, 211, 238, 0.12);
+
+    --md-default-bg-color: #0b0f1a;
+    --md-typeset-a-color: var(--rd-indigo-light);
+
+    --rd-surface: #121829;
+    --rd-surface-alt: #0f1526;
+    --rd-border: rgba(148, 163, 184, 0.16);
+    --rd-muted: rgba(226, 232, 240, 0.66);
+    --rd-ring: 0 0 0 1px rgba(129, 140, 248, 0.22);
+    --rd-hero-ground: linear-gradient(160deg, #111a3a 0%, #1b1450 45%, #06373d 100%);
+
+    --md-footer-bg-color: #0f1526;
+    --md-footer-bg-color--dark: #0a0f1c;
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+
+.md-typeset {
+    font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+}
+
+.md-typeset h1 {
+    font-weight: 750;
+    letter-spacing: -0.03em;
+    color: var(--md-default-fg-color);
+}
+
+.md-typeset h2 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-top: 2.4rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--rd-border);
+}
+
+.md-typeset h2::after {
+    content: '';
+    display: block;
+    width: 2.2rem;
+    height: 2px;
+    margin-top: 0.35rem;
+    margin-bottom: -0.55rem;
+    border-radius: 2px;
+    background: var(--rd-gradient);
+}
+
+.md-typeset h3 {
+    font-weight: 650;
+    letter-spacing: -0.01em;
+}
+
+/* --------------------------------------------------------------------------
+   Chrome: header, tabs, footer
+   -------------------------------------------------------------------------- */
+
+.md-header {
+    box-shadow: 0 1px 0 var(--rd-border);
+}
+
+/* Only above the drawer breakpoint: backdrop-filter turns the header into a
+   containing block, which clips the fixed-position mobile search overlay. */
+@media screen and (min-width: 76.25em) {
+    .md-header {
+        backdrop-filter: saturate(160%) blur(12px);
+        background-color: color-mix(in srgb, var(--md-primary-fg-color) 88%, transparent);
+    }
+}
+
+.md-tabs {
+    background-color: transparent;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.md-tabs__link {
+    opacity: 0.72;
+    font-weight: 500;
+    transition: opacity 150ms ease;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+    opacity: 1;
+}
+
+.md-social__link:hover {
+    color: var(--md-accent-fg-color);
+}
+
+/* --------------------------------------------------------------------------
+   Hero
+   -------------------------------------------------------------------------- */
+
+/* The landing page hides both sidebars, so rein the column back in — keeps
+   line length readable and the card grids at two columns like every other page. */
+.md-content__inner:has(> .hero) {
+    max-width: 44rem;
+    margin-inline: auto;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 2.5rem;
+    padding: 2.75rem 2.25rem;
+    border-radius: var(--rd-radius);
+    background: var(--rd-hero-ground);
+    color: #f8fafc;
+    isolation: isolate;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: -40% -10% auto auto;
+    width: 30rem;
+    height: 30rem;
+    z-index: -1;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.35) 0%, transparent 65%);
+    filter: blur(10px);
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: auto auto -55% -15%;
+    width: 26rem;
+    height: 26rem;
+    z-index: -1;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(129, 140, 248, 0.32) 0%, transparent 65%);
+    filter: blur(10px);
+}
+
+.md-typeset .hero__eyebrow {
+    margin: 0 0 0.4rem;
+    font-family: var(--md-code-font-family, monospace);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--rd-cyan-light);
+}
+
+.md-typeset .hero__name {
+    margin: 0;
+    font-size: 2.35rem;
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    color: #ffffff;
+    border: 0;
+}
+
+.md-typeset .hero__tagline {
+    margin: 0.7rem 0 0;
+    max-width: 34rem;
+    font-size: 0.86rem;
+    line-height: 1.65;
+    color: rgba(248, 250, 252, 0.82);
+}
+
+.hero__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1.1rem;
+}
+
+.hero__chips span {
+    padding: 0.24rem 0.66rem;
+    border-radius: 999px;
+    border: 1px solid rgba(248, 250, 252, 0.22);
+    background: rgba(248, 250, 252, 0.08);
+    font-size: 0.66rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: rgba(248, 250, 252, 0.92);
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+.md-typeset .hero__actions .md-button {
+    margin: 0;
+    padding: 0.45rem 1.05rem;
+    border-radius: 999px;
+    border-width: 1px;
+    border-color: rgba(248, 250, 252, 0.35);
+    color: #f8fafc;
+    font-size: 0.72rem;
+    font-weight: 600;
+    transition: transform 150ms ease, background-color 150ms ease, border-color 150ms ease;
+}
+
+.md-typeset .hero__actions .md-button:hover {
+    transform: translateY(-1px);
+    background-color: rgba(248, 250, 252, 0.14);
+    border-color: rgba(248, 250, 252, 0.6);
+    color: #ffffff;
+}
+
+.md-typeset .hero__actions .md-button--primary {
+    background: var(--rd-gradient-cta);
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 8px 22px rgba(79, 70, 229, 0.38);
+}
+
+.md-typeset .hero__actions .md-button--primary:hover {
+    background: var(--rd-gradient-cta);
+    border-color: transparent;
+    filter: brightness(1.08);
+}
+
+@media screen and (max-width: 44.9375em) {
+    .hero {
+        padding: 2rem 1.35rem;
+    }
+
+    .md-typeset .hero__name {
+        font-size: 1.85rem;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Grid cards
+   -------------------------------------------------------------------------- */
+
+.md-typeset .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: 0.75rem;
+}
+
+.md-typeset .grid.cards > ul > li {
+    border-radius: var(--rd-radius);
+    border-color: var(--rd-border);
+    background-color: var(--rd-surface);
+    box-shadow: none;
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--md-accent-fg-color) 45%, transparent);
+    box-shadow: 0 14px 32px rgba(2, 6, 23, 0.14), var(--rd-ring);
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+    margin: 0.6rem 0;
+    background: var(--rd-gradient);
+    height: 2px;
+    border: 0;
+    opacity: 0.55;
+}
+
+.md-typeset .grid.cards .twemoji {
+    color: var(--md-accent-fg-color);
+}
+
+/* --------------------------------------------------------------------------
+   Stack list: card rows for the technology pages
+   Authored as <div class="stack" markdown> + a plain markdown list.
+   -------------------------------------------------------------------------- */
+
+.md-typeset .stack > ul {
+    display: grid;
+    gap: 0.65rem;
+    margin: 1.2rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.md-typeset .stack > ul > li {
+    margin: 0;
+    padding: 0.9rem 1.1rem;
+    border: 1px solid var(--rd-border);
+    border-left: 3px solid transparent;
+    border-radius: 12px;
+    background-color: var(--rd-surface);
+    transition: border-left-color 160ms ease, background-color 160ms ease;
+}
+
+.md-typeset .stack > ul > li:hover {
+    border-left-color: var(--md-accent-fg-color);
+    background-color: var(--rd-surface-alt);
+}
+
+.md-typeset .stack > ul > li > p {
+    margin: 0 0 0.45rem;
+}
+
+.md-typeset .stack > ul > li > p:last-child {
+    margin-bottom: 0;
+}
+
+.md-typeset .stack > ul > li > p:first-child {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--md-default-fg-color);
+}
+
+.md-typeset .stack > ul > li > p:first-child .twemoji {
+    color: var(--md-accent-fg-color);
+    vertical-align: -0.2em;
+    margin-right: 0.4rem;
+}
+
+.md-typeset .stack > ul > li > p:first-child .twemoji svg {
+    width: 1.15em;
+    height: 1.15em;
+}
+
+.md-typeset .stack > ul > li > ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.05rem;
+    font-size: 0.74rem;
+    color: var(--rd-muted);
+}
+
+.md-typeset .stack > ul > li > ul > li {
+    margin-top: 0.2rem;
+}
+
+/* --------------------------------------------------------------------------
+   Misc polish
+   -------------------------------------------------------------------------- */
+
+.md-typeset .admonition,
+.md-typeset details {
+    border-radius: 12px;
+    border-width: 1px;
+    box-shadow: none;
+}
+
+.md-typeset blockquote {
+    border-left-width: 3px;
+    border-left-color: var(--md-accent-fg-color);
+}
+
+.md-typeset code {
+    border-radius: 5px;
+    font-size: 0.85em;
+}
+
+/* Material derives button colors from --md-primary-fg-color, which is almost
+   black here so the header can be dark. Drive them from the brand instead. */
+.md-typeset .md-button {
+    border-radius: 999px;
+    font-weight: 600;
+    color: var(--md-accent-fg-color);
+    border-color: currentcolor;
+}
+
+.md-typeset .md-button:focus,
+.md-typeset .md-button:hover {
+    background-color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+    color: var(--md-default-bg-color);
+}
+
+.md-typeset .md-button--primary {
+    background: var(--rd-gradient-cta);
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.md-typeset .md-button--primary:focus,
+.md-typeset .md-button--primary:hover {
+    background: var(--rd-gradient-cta);
+    border-color: transparent;
+    color: #ffffff;
+    filter: brightness(1.08);
+}
+
+.md-search__form {
+    border-radius: 10px;
+}
+
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+    color: var(--md-accent-fg-color);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
